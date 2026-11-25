@@ -4,6 +4,7 @@ from pathlib import Path
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import urlsplit, parse_qs
 import bridge
+import studio_lab
 
 ROOT=Path(__file__).resolve().parent
 
@@ -50,7 +51,7 @@ class Library:
 CSS='''*{box-sizing:border-box}body{margin:0;background:#f3f5f5;color:#17313a;font:15px/1.55 system-ui,sans-serif}header{background:#17313a;color:#fff;padding:22px max(24px,calc((100vw - 1160px)/2));display:flex;align-items:center;justify-content:space-between;gap:12px}header a{color:#fff;text-decoration:none;font-weight:700;letter-spacing:.05em}main{max-width:1160px;margin:auto;padding:32px 24px}h1{font:500 clamp(30px,5vw,48px)/1.12 Georgia,serif;margin:0 0 12px}h2{font-size:20px}p{max-width:72ch}a{color:#176b68}small,.muted{color:#526970}.notice{border-left:4px solid #b77929;background:#fff8e8;padding:12px 16px;margin:22px 0}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}input,textarea{font:inherit;padding:10px;border:1px solid #a6b7b9;border-radius:5px;background:white;color:#17313a}input[type=search]{flex:1;min-width:180px}button,.button{background:#176b68;color:white;border:0;padding:10px 16px;border-radius:5px;font:inherit;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block}a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #ca8a25;outline-offset:3px}.entry{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;padding:18px 0;border-top:1px solid #c7d2d3}.entry h2{margin:0}.entry p{margin:5px 0}.status{font-size:12px;color:#825311}.metrics{display:flex;gap:32px;border-bottom:1px solid #c7d2d3;padding:16px 0;flex-wrap:wrap}.metrics strong{font:32px Georgia;display:block}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#e6eeee;padding:16px;border-radius:5px;font-size:13px}label{display:block;margin:14px 0 5px;font-weight:600}form.editor input,textarea{width:100%}footer{padding:24px;color:#526970;text-align:center}@media(max-width:600px){.entry{grid-template-columns:1fr;gap:5px}header{flex-wrap:wrap}}'''
 
 def page(title,body):
-    return ('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+esc(title)+' | GAIA Studio</title><style>'+CSS+'</style><header><a href="/">GAIA / Studio</a><span>Local workspace · v0.8</span></header><main>'+body+'</main><footer>GaiaLab — local prototype. No execution authority granted.</footer></html>').encode()
+    return ('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+esc(title)+' | GAIA Studio</title><style>'+CSS+'</style><header><a href="/">GAIA / Studio</a><a href="/lab">Assurance Laboratory</a><span>Local workspace · v0.11</span></header><main>'+body+'</main><footer>GaiaLab — local prototype. No execution authority granted.</footer></html>').encode()
 
 def handler(lib,token):
     class Handler(BaseHTTPRequestHandler):
@@ -90,7 +91,7 @@ def handler(lib,token):
                 p=lib.create(*(data[k][0] for k in ('name','description','body')))
                 return self.reply(201,page('Draft created',f'<h1>Draft created</h1><p>Stored locally and awaiting review.</p><a class="button" href="/skill/{esc(p["name"])}">Inspect draft</a>'))
             except (ValueError,OSError,UnicodeError): return self.reply(400,page('Draft rejected','<h1>Draft rejected</h1><p>Use a unique name, valid text and no embedded credentials.</p><a href="/new">Try again</a>'))
-    return Handler
+    return studio_lab.extend(Handler, token, page, esc)
 
 def main():
     p=argparse.ArgumentParser(description=__doc__); p.add_argument('--port',type=int,default=8765); p.add_argument('--drafts',type=Path,default=ROOT/'studio-drafts'); a=p.parse_args()
