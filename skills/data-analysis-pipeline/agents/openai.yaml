@@ -1,0 +1,4 @@
+interface:
+  display_name: Data Analysis Pipeline
+  short_description: Build reproducible statistical, data engineering and machine
+    learning analyses from supplied or

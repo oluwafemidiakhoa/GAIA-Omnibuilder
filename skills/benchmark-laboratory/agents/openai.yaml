@@ -1,0 +1,4 @@
+interface:
+  display_name: Benchmark Laboratory
+  short_description: Compare skill, agent and model workflow versions using frozen
+    representative benchmark suites.

@@ -1,0 +1,4 @@
+interface:
+  display_name: Ml Model Engineer
+  short_description: Build and validate machine learning training and inference pipelines,
+    including model selection

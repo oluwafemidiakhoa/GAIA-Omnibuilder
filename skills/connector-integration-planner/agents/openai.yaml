@@ -1,0 +1,4 @@
+interface:
+  display_name: Connector Integration Planner
+  short_description: Design MCP, API and application integration contracts with narrowly
+    scoped authorization.

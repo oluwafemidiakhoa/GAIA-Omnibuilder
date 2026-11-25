@@ -82,3 +82,7 @@ Exit codes: 0 completed/valid/initialized; 1 incomplete, failed or invalid verif
 ## Scope and next milestone
 
 This is a disposable local engineering prototype, not production-ready agent infrastructure. The v0.2 code was recovered from its prior archive; the Windows newline correction was incorporated and the original test files preserved. No production resource, local user files, external service, repository, credential or installed ChatGPT skill has been modified by this release. No external connector or AI model provider was invoked. Windows v0.3 validation and independent security review are outstanding. The next milestone is a read-only AI provider adapter that produces validated proposed plans, with cost accounting and operator-controlled execution. Provider requests must not be allowed to grant themselves authority.
+
+## Current local web prototype
+
+See [STUDIO.md](STUDIO.md) for GAIA Studio v0.8. Run `python studio.py` and open http://127.0.0.1:8765. Historical README instructions below/above describe earlier runtime releases.

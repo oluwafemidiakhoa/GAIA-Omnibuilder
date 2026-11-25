@@ -1,0 +1,4 @@
+interface:
+  display_name: Software Architecture Specifier
+  short_description: Design software architecture, APIs, schemas, ADRs and migration
+    plans before implementation.

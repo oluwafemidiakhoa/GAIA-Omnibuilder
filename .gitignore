@@ -18,3 +18,8 @@ venv/
 secrets/
 credentials/
 my-*.json
+
+# GAIA local workspace
+studio-drafts/
+portable-exports/
+dist/

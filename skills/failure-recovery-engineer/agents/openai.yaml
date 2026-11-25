@@ -1,0 +1,4 @@
+interface:
+  display_name: Failure Recovery Engineer
+  short_description: Diagnose failed builds and perform bounded reversible corrections
+    with regression checks.

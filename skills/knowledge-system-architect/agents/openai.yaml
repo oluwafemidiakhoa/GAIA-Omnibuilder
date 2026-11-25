@@ -1,0 +1,4 @@
+interface:
+  display_name: Knowledge System Architect
+  short_description: Design RAG, knowledge graphs, search and provenance-aware retrieval
+    systems.

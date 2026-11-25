@@ -1,0 +1,4 @@
+interface:
+  display_name: Evidence Ledger
+  short_description: Maintain append-only evidence records for builds, research and
+    decisions with explicit provenan

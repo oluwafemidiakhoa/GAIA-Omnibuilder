@@ -1,0 +1,4 @@
+interface:
+  display_name: Universal Builder Router
+  short_description: Coordinate complex builds across available specialist skills
+    and tools, without replacing narro

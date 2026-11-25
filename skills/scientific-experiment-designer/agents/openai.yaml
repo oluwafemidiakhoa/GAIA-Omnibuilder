@@ -1,0 +1,4 @@
+interface:
+  display_name: Scientific Experiment Designer
+  short_description: Translate scientific evidence into falsifiable experiments and
+    preregistered analysis plans.

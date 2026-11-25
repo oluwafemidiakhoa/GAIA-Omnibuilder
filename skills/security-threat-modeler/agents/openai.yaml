@@ -1,0 +1,4 @@
+interface:
+  display_name: Security Threat Modeler
+  short_description: Model trust boundaries, authorization failures, abuse cases and
+    security requirements before im

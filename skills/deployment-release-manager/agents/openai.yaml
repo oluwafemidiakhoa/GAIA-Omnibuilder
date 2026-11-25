@@ -1,0 +1,4 @@
+interface:
+  display_name: Deployment Release Manager
+  short_description: Plan and verify staged deployment, CI/CD, database migration,
+    canaries and rollback.

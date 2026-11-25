@@ -1,0 +1,4 @@
+interface:
+  display_name: Evaluation Verification Lab
+  short_description: Design and execute independent acceptance tests, regression suites
+    and adversarial evaluations.
