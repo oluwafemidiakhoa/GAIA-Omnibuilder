@@ -1,0 +1,23 @@
+test_all (test_registry.RegistryTests.test_all) ... ok
+test_content_not_executed (test_registry.RegistryTests.test_content_not_executed) ... ok
+test_invalid (test_registry.RegistryTests.test_invalid) ... ok
+test_name_mismatch (test_registry.RegistryTests.test_name_mismatch) ... ok
+test_route (test_registry.RegistryTests.test_route) ... ok
+test_unknown_directory (test_registry.RegistryTests.test_unknown_directory) ... ok
+test_bool_not_integer (test_runtime.Tests.test_bool_not_integer) ... ok
+test_cycle (test_runtime.Tests.test_cycle) ... ok
+test_dag (test_runtime.Tests.test_dag) ... ok
+test_duplicate (test_runtime.Tests.test_duplicate) ... ok
+test_failure_blocks (test_runtime.Tests.test_failure_blocks) ... ok
+test_invalid_args (test_runtime.Tests.test_invalid_args) ... ok
+test_no_reinitialize (test_runtime.Tests.test_no_reinitialize) ... ok
+test_restart (test_runtime.Tests.test_restart) ... ok
+test_tamper_ledger (test_runtime.Tests.test_tamper_ledger) ... ok
+test_tamper_state (test_runtime.Tests.test_tamper_state) ... ok
+test_unknown_dep (test_runtime.Tests.test_unknown_dep) ... ok
+test_unknown_op (test_runtime.Tests.test_unknown_op) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.102s
+
+OK

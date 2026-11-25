@@ -1,0 +1,1 @@
+{"tasks":[{"id":"calculate","deps":[],"op":"sum","args":{"values":[2,3,5]},"expect":10}]}

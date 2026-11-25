@@ -1,0 +1,32 @@
+[
+  {
+    "capability": "architecture",
+    "status": "METADATA_ONLY",
+    "specialists": [
+      "software-architecture-specifier"
+    ],
+    "execution_authorized": false
+  },
+  {
+    "capability": "database",
+    "status": "METADATA_ONLY",
+    "specialists": [
+      "enterprise-database-engineer"
+    ],
+    "execution_authorized": false
+  },
+  {
+    "capability": "verification",
+    "status": "METADATA_ONLY",
+    "specialists": [
+      "evaluation-verification-lab"
+    ],
+    "execution_authorized": false
+  },
+  {
+    "capability": "quantum-hardware",
+    "status": "MISSING",
+    "specialists": [],
+    "execution_authorized": false
+  }
+]

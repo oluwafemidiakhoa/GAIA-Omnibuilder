@@ -1,0 +1,309 @@
+{
+  "body": {
+    "protocol": "paired-contract-v1",
+    "cases": [
+      {
+        "id": "DEV-01",
+        "mission": "Add [2, 3, 5]",
+        "contract": {
+          "tasks": [
+            {
+              "id": "calculate",
+              "deps": [],
+              "op": "sum",
+              "args": {
+                "values": [
+                  2,
+                  3,
+                  5
+                ]
+              },
+              "expect": 10
+            }
+          ]
+        },
+        "policy": {
+          "allowed_operations": [
+            "collect",
+            "echo",
+            "sum"
+          ],
+          "max_attempts": 3,
+          "max_tasks": 3
+        }
+      },
+      {
+        "id": "DEV-02",
+        "mission": "Add [-7, 3]",
+        "contract": {
+          "tasks": [
+            {
+              "id": "calculate",
+              "deps": [],
+              "op": "sum",
+              "args": {
+                "values": [
+                  -7,
+                  3
+                ]
+              },
+              "expect": -4
+            }
+          ]
+        },
+        "policy": {
+          "allowed_operations": [
+            "collect",
+            "echo",
+            "sum"
+          ],
+          "max_attempts": 3,
+          "max_tasks": 3
+        }
+      },
+      {
+        "id": "DEV-03",
+        "mission": "Add [0, 0]",
+        "contract": {
+          "tasks": [
+            {
+              "id": "calculate",
+              "deps": [],
+              "op": "sum",
+              "args": {
+                "values": [
+                  0,
+                  0
+                ]
+              },
+              "expect": 0
+            }
+          ]
+        },
+        "policy": {
+          "allowed_operations": [
+            "collect",
+            "echo",
+            "sum"
+          ],
+          "max_attempts": 3,
+          "max_tasks": 3
+        }
+      },
+      {
+        "id": "DEV-04",
+        "mission": "Add [100, -100]",
+        "contract": {
+          "tasks": [
+            {
+              "id": "calculate",
+              "deps": [],
+              "op": "sum",
+              "args": {
+                "values": [
+                  100,
+                  -100
+                ]
+              },
+              "expect": 0
+            }
+          ]
+        },
+        "policy": {
+          "allowed_operations": [
+            "collect",
+            "echo",
+            "sum"
+          ],
+          "max_attempts": 3,
+          "max_tasks": 3
+        }
+      },
+      {
+        "id": "DEV-05",
+        "mission": "Add [9, 11]",
+        "contract": {
+          "tasks": [
+            {
+              "id": "calculate",
+              "deps": [],
+              "op": "sum",
+              "args": {
+                "values": [
+                  9,
+                  11
+                ]
+              },
+              "expect": 20
+            }
+          ]
+        },
+        "policy": {
+          "allowed_operations": [
+            "collect",
+            "echo",
+            "sum"
+          ],
+          "max_attempts": 3,
+          "max_tasks": 3
+        }
+      },
+      {
+        "id": "DEV-06",
+        "mission": "Add [-2, -3]",
+        "contract": {
+          "tasks": [
+            {
+              "id": "calculate",
+              "deps": [],
+              "op": "sum",
+              "args": {
+                "values": [
+                  -2,
+                  -3
+                ]
+              },
+              "expect": -5
+            }
+          ]
+        },
+        "policy": {
+          "allowed_operations": [
+            "collect",
+            "echo",
+            "sum"
+          ],
+          "max_attempts": 3,
+          "max_tasks": 3
+        }
+      },
+      {
+        "id": "DEV-07",
+        "mission": "Add [1, 2, 3, 4]",
+        "contract": {
+          "tasks": [
+            {
+              "id": "calculate",
+              "deps": [],
+              "op": "sum",
+              "args": {
+                "values": [
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              "expect": 10
+            }
+          ]
+        },
+        "policy": {
+          "allowed_operations": [
+            "collect",
+            "echo",
+            "sum"
+          ],
+          "max_attempts": 3,
+          "max_tasks": 3
+        }
+      },
+      {
+        "id": "DEV-08",
+        "mission": "Add [999, 1]",
+        "contract": {
+          "tasks": [
+            {
+              "id": "calculate",
+              "deps": [],
+              "op": "sum",
+              "args": {
+                "values": [
+                  999,
+                  1
+                ]
+              },
+              "expect": 1000
+            }
+          ]
+        },
+        "policy": {
+          "allowed_operations": [
+            "collect",
+            "echo",
+            "sum"
+          ],
+          "max_attempts": 3,
+          "max_tasks": 3
+        }
+      },
+      {
+        "id": "DEV-09",
+        "mission": "Echo the supplied value",
+        "contract": {
+          "tasks": [
+            {
+              "id": "echo",
+              "deps": [],
+              "op": "echo",
+              "args": {
+                "value": "alpha"
+              },
+              "expect": "alpha"
+            }
+          ]
+        },
+        "policy": {
+          "allowed_operations": [
+            "collect",
+            "echo",
+            "sum"
+          ],
+          "max_attempts": 3,
+          "max_tasks": 3
+        }
+      },
+      {
+        "id": "DEV-10",
+        "mission": "Echo the supplied value",
+        "contract": {
+          "tasks": [
+            {
+              "id": "echo",
+              "deps": [],
+              "op": "echo",
+              "args": {
+                "value": {
+                  "x": [
+                    1,
+                    false,
+                    null
+                  ]
+                }
+              },
+              "expect": {
+                "x": [
+                  1,
+                  false,
+                  null
+                ]
+              }
+            }
+          ]
+        },
+        "policy": {
+          "allowed_operations": [
+            "collect",
+            "echo",
+            "sum"
+          ],
+          "max_attempts": 3,
+          "max_tasks": 3
+        }
+      }
+    ],
+    "missing": "incomplete_not_success",
+    "primary": "paired exact contract pass"
+  },
+  "sha256": "b6bf132396f0c33c79bf9a0e0ccbbccbb814ff4a6e7467f14b61699815928ec6"
+}

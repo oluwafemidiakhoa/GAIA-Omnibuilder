@@ -1,0 +1,4 @@
+[
+ {"id":"calculate","deps":[],"op":"sum","args":{"values":[2,3,5]},"expect":10},
+ {"id":"verify-output","deps":["calculate"],"op":"collect","args":{},"expect":{"calculate":10}}
+]

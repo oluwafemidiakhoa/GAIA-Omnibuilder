@@ -1,0 +1,156 @@
+[
+  {
+    "name": "artifact-production-studio",
+    "description": "Produce polished documents, presentations, spreadsheets, diagrams and other supported artifacts. Use when the user requests this workflow, its deliverables, or evaluation of its domain-specific outcomes. Avoid activation for unrelated tasks or when a narrower existing skill is sufficient.",
+    "capability": "artifacts",
+    "sha256": "40ffffe85e2ee34aeb4a92e11ba1b20e7a8f66224c5a61e9cf460b7fbe0107af",
+    "runtime_status": "UNKNOWN"
+  },
+  {
+    "name": "benchmark-laboratory",
+    "description": "Compare skill, agent and model workflow versions using frozen representative benchmark suites. Use when the user requests this workflow, its deliverables, or evaluation of its domain-specific outcomes. Avoid activation for unrelated tasks or when a narrower existing skill is sufficient.",
+    "capability": "benchmarking",
+    "sha256": "9359b82fc71b590d265adc7cdc38fc4692989616ecd1c6762d2693aabe45eb42",
+    "runtime_status": "UNKNOWN"
+  },
+  {
+    "name": "business-operations-planner",
+    "description": "Design operating models, process improvements, KPI systems and business economics. Use when the user requests this workflow, its deliverables, or evaluation of its domain-specific outcomes. Avoid activation for unrelated tasks or when a narrower existing skill is sufficient.",
+    "capability": "operations",
+    "sha256": "cfbee17b5f95df52e00002e9fe06d82243927f1ace6062d863231654c7ff5203",
+    "runtime_status": "UNKNOWN"
+  },
+  {
+    "name": "connector-integration-planner",
+    "description": "Design MCP, API and application integration contracts with narrowly scoped authorization. Use when the user requests this workflow, its deliverables, or evaluation of its domain-specific outcomes. Avoid activation for unrelated tasks or when a narrower existing skill is sufficient.",
+    "capability": "integration",
+    "sha256": "32db693fa2ae247ce20a0afa78e6ecbef1927b9d8c890156ddcf0d4207f05fef",
+    "runtime_status": "UNKNOWN"
+  },
+  {
+    "name": "cost-performance-engineer",
+    "description": "Optimize computational and AI workloads for measurable cost, latency and quality tradeoffs. Use when the user requests this workflow, its deliverables, or evaluation of its domain-specific outcomes. Avoid activation for unrelated tasks or when a narrower existing skill is sufficient.",
+    "capability": "optimization",
+    "sha256": "ff11031c2d84a118d5f5267bc19364fddecfe2e4279cc12332eebc867f9d5430",
+    "runtime_status": "UNKNOWN"
+  },
+  {
+    "name": "data-analysis-pipeline",
+    "description": "Build reproducible statistical, data engineering and machine learning analyses from supplied or authorized data. Use when the user requests this workflow, its deliverables, or evaluation of its domain-specific outcomes. Avoid activation for unrelated tasks or when a narrower existing skill is sufficient.",
+    "capability": "data-analysis",
+    "sha256": "f4747fffc0ddb689f394db6cb93ee0df5f34603f3ebe6515a826f72afb0cdee9",
+    "runtime_status": "UNKNOWN"
+  },
+  {
+    "name": "deployment-release-manager",
+    "description": "Plan and verify staged deployment, CI/CD, database migration, canaries and rollback. Use when the user requests this workflow, its deliverables, or evaluation of its domain-specific outcomes. Avoid activation for unrelated tasks or when a narrower existing skill is sufficient.",
+    "capability": "deployment",
+    "sha256": "05124d5423239b271dcb13af1f07e04c119b9f628bd4e36219f69c8d56fa0868",
+    "runtime_status": "UNKNOWN"
+  },
+  {
+    "name": "enterprise-database-engineer",
+    "description": "Design and troubleshoot SQL databases, data warehouses, indexes, migrations and operational diagnostics. Use when the user requests this workflow, its deliverables, or evaluation of its domain-specific outcomes. Avoid activation for unrelated tasks or when a narrower existing skill is sufficient.",
+    "capability": "database",
+    "sha256": "dbbfb4a021d99956cca12aa3ee89ec45dbe3b7372df2fa5c0bc9c4ccff438dee",
+    "runtime_status": "UNKNOWN"
+  },
+  {
+    "name": "evaluation-verification-lab",
+    "description": "Design and execute independent acceptance tests, regression suites and adversarial evaluations. Use when the user requests this workflow, its deliverables, or evaluation of its domain-specific outcomes. Avoid activation for unrelated tasks or when a narrower existing skill is sufficient.",
+    "capability": "verification",
+    "sha256": "6c3790c2e3ed0c2f7e123e386b500b30428da9b937ffcd472134fad62320004a",
+    "runtime_status": "UNKNOWN"
+  },
+  {
+    "name": "evidence-ledger",
+    "description": "Maintain append-only evidence records for builds, research and decisions with explicit provenance. Use when the user requests this workflow, its deliverables, or evaluation of its domain-specific outcomes. Avoid activation for unrelated tasks or when a narrower existing skill is sufficient.",
+    "capability": "provenance",
+    "sha256": "46cb8c8567057f8cd545b74d94325aa2de80847ef260fecbefa815ed5a21b9ea",
+    "runtime_status": "UNKNOWN"
+  },
+  {
+    "name": "failure-recovery-engineer",
+    "description": "Diagnose failed builds and perform bounded reversible corrections with regression checks. Use when the user requests this workflow, its deliverables, or evaluation of its domain-specific outcomes. Avoid activation for unrelated tasks or when a narrower existing skill is sufficient.",
+    "capability": "recovery",
+    "sha256": "5e7a981ae06ea16eb5492206a641b984ea09c4e00b85cd9c723c187d953201ef",
+    "runtime_status": "UNKNOWN"
+  },
+  {
+    "name": "innovation-validation-lab",
+    "description": "Convert novel product or scientific ideas into testable novelty and feasibility claims rather than declaring breakthroughs. Use when the user requests this workflow, its deliverables, or evaluation of its domain-specific outcomes. Avoid activation for unrelated tasks or when a narrower existing skill is sufficient.",
+    "capability": "innovation",
+    "sha256": "a5a934789c3a3a079ac9091c7e932048340599cff43afe60d3faf12551671d8a",
+    "runtime_status": "UNKNOWN"
+  },
+  {
+    "name": "knowledge-system-architect",
+    "description": "Design RAG, knowledge graphs, search and provenance-aware retrieval systems. Use when the user requests this workflow, its deliverables, or evaluation of its domain-specific outcomes. Avoid activation for unrelated tasks or when a narrower existing skill is sufficient.",
+    "capability": "knowledge-retrieval",
+    "sha256": "011afa3239063bb4ce343d910c96e9adcd848f491beb0699a4146f65eab8f80c",
+    "runtime_status": "UNKNOWN"
+  },
+  {
+    "name": "ml-model-engineer",
+    "description": "Build and validate machine learning training and inference pipelines, including model selection and deployment readiness. Use when the user requests this workflow, its deliverables, or evaluation of its domain-specific outcomes. Avoid activation for unrelated tasks or when a narrower existing skill is sufficient.",
+    "capability": "machine-learning",
+    "sha256": "fb7aaf418bd4c49240e2edf4f62e25ce34176aa710b466bc6e66ab8f5e57eb00",
+    "runtime_status": "UNKNOWN"
+  },
+  {
+    "name": "product-design-system-planner",
+    "description": "Design product journeys, accessible UX, information architecture and reusable design systems. Use when the user requests this workflow, its deliverables, or evaluation of its domain-specific outcomes. Avoid activation for unrelated tasks or when a narrower existing skill is sufficient.",
+    "capability": "product-design",
+    "sha256": "ce714ee79c9fd783ec50e97d99faf6f8232a3d219922cded83e90f9f0ca60d8a",
+    "runtime_status": "UNKNOWN"
+  },
+  {
+    "name": "scientific-experiment-designer",
+    "description": "Translate scientific evidence into falsifiable experiments and preregistered analysis plans. Use when the user requests this workflow, its deliverables, or evaluation of its domain-specific outcomes. Avoid activation for unrelated tasks or when a narrower existing skill is sufficient.",
+    "capability": "experiment-design",
+    "sha256": "09e0d6261c248582b7a16927af2975fee69afe924713ab258f4d1c3c2dc5762f",
+    "runtime_status": "UNKNOWN"
+  },
+  {
+    "name": "security-threat-modeler",
+    "description": "Model trust boundaries, authorization failures, abuse cases and security requirements before implementation. Use when the user requests this workflow, its deliverables, or evaluation of its domain-specific outcomes. Avoid activation for unrelated tasks or when a narrower existing skill is sufficient.",
+    "capability": "security",
+    "sha256": "bcd1ae234eaa97901d49d07f9a30351040fea6abbc2039fbb5c0925d3631af05",
+    "runtime_status": "UNKNOWN"
+  },
+  {
+    "name": "skill-factory",
+    "description": "Create candidate specialist skills to close demonstrated capability gaps using the supported skill creation workflow. Use when the user requests this workflow, its deliverables, or evaluation of its domain-specific outcomes. Avoid activation for unrelated tasks or when a narrower existing skill is sufficient.",
+    "capability": "skill-creation",
+    "sha256": "0be040931d15823d93eb515a957b5fd2d93ebd259178068363b44b2f82641061",
+    "runtime_status": "UNKNOWN"
+  },
+  {
+    "name": "software-architecture-specifier",
+    "description": "Design software architecture, APIs, schemas, ADRs and migration plans before implementation. Use when the user requests this workflow, its deliverables, or evaluation of its domain-specific outcomes. Avoid activation for unrelated tasks or when a narrower existing skill is sufficient.",
+    "capability": "architecture",
+    "sha256": "fe4924033eb9ed973ce3b893dcd6434ca3e2bba485ddec7b12486030070c427a",
+    "runtime_status": "UNKNOWN"
+  },
+  {
+    "name": "technical-communication-studio",
+    "description": "Create rigorous technical documentation, manuscripts, runbooks and developer guides from verified sources. Use when the user requests this workflow, its deliverables, or evaluation of its domain-specific outcomes. Avoid activation for unrelated tasks or when a narrower existing skill is sufficient.",
+    "capability": "documentation",
+    "sha256": "51888684eff15fb6561a695134f3fe836a90c83d303c2c98ba0a408a918f26c8",
+    "runtime_status": "UNKNOWN"
+  },
+  {
+    "name": "universal-builder-router",
+    "description": "Coordinate complex builds across available specialist skills and tools, without replacing narrow domain workflows. Use when the user requests this workflow, its deliverables, or evaluation of its domain-specific outcomes. Avoid activation for unrelated tasks or when a narrower existing skill is sufficient.",
+    "capability": "orchestration",
+    "sha256": "f1eea7d15f9b5fe5a1ea9c2d36dd159608e9bceb60dc52665176ba7e8bcc84e0",
+    "runtime_status": "UNKNOWN"
+  },
+  {
+    "name": "workflow-automation-architect",
+    "description": "Build repeatable business or engineering automations with explicit triggers, state and recovery. Use when the user requests this workflow, its deliverables, or evaluation of its domain-specific outcomes. Avoid activation for unrelated tasks or when a narrower existing skill is sufficient.",
+    "capability": "automation",
+    "sha256": "3b08a922e5624c9bc6b31b12798d1fe61232eade04315c90956e7eac6aa8b6bb",
+    "runtime_status": "UNKNOWN"
+  }
+]

@@ -1,0 +1,546 @@
+{
+  "suite_sha256": "b6bf132396f0c33c79bf9a0e0ccbbccbb814ff4a6e7467f14b61699815928ec6",
+  "kind": "synthetic_fixture",
+  "baseline": {
+    "DEV-01": {
+      "execution_authorized": false,
+      "policy": {
+        "allowed_operations": [
+          "collect",
+          "echo",
+          "sum"
+        ],
+        "max_attempts": 3,
+        "max_tasks": 3
+      },
+      "plan": [
+        {
+          "id": "calculate",
+          "deps": [],
+          "op": "sum",
+          "args": {
+            "values": [
+              2,
+              3,
+              5
+            ]
+          },
+          "expect": 11
+        }
+      ]
+    },
+    "DEV-02": {
+      "execution_authorized": false,
+      "policy": {
+        "allowed_operations": [
+          "collect",
+          "echo",
+          "sum"
+        ],
+        "max_attempts": 3,
+        "max_tasks": 3
+      },
+      "plan": [
+        {
+          "id": "calculate",
+          "deps": [],
+          "op": "sum",
+          "args": {
+            "values": [
+              -7,
+              3
+            ]
+          },
+          "expect": -3
+        }
+      ]
+    },
+    "DEV-03": {
+      "execution_authorized": false,
+      "policy": {
+        "allowed_operations": [
+          "collect",
+          "echo",
+          "sum"
+        ],
+        "max_attempts": 3,
+        "max_tasks": 3
+      },
+      "plan": [
+        {
+          "id": "calculate",
+          "deps": [],
+          "op": "sum",
+          "args": {
+            "values": [
+              0,
+              0
+            ]
+          },
+          "expect": 1
+        }
+      ]
+    },
+    "DEV-04": {
+      "execution_authorized": false,
+      "policy": {
+        "allowed_operations": [
+          "collect",
+          "echo",
+          "sum"
+        ],
+        "max_attempts": 3,
+        "max_tasks": 3
+      },
+      "plan": [
+        {
+          "id": "calculate",
+          "deps": [],
+          "op": "sum",
+          "args": {
+            "values": [
+              100,
+              -100
+            ]
+          },
+          "expect": 0
+        }
+      ]
+    },
+    "DEV-05": {
+      "execution_authorized": false,
+      "policy": {
+        "allowed_operations": [
+          "collect",
+          "echo",
+          "sum"
+        ],
+        "max_attempts": 3,
+        "max_tasks": 3
+      },
+      "plan": [
+        {
+          "id": "calculate",
+          "deps": [],
+          "op": "sum",
+          "args": {
+            "values": [
+              9,
+              11
+            ]
+          },
+          "expect": 20
+        }
+      ]
+    },
+    "DEV-06": {
+      "execution_authorized": false,
+      "policy": {
+        "allowed_operations": [
+          "collect",
+          "echo",
+          "sum"
+        ],
+        "max_attempts": 3,
+        "max_tasks": 3
+      },
+      "plan": [
+        {
+          "id": "calculate",
+          "deps": [],
+          "op": "sum",
+          "args": {
+            "values": [
+              -2,
+              -3
+            ]
+          },
+          "expect": -5
+        }
+      ]
+    },
+    "DEV-07": {
+      "execution_authorized": false,
+      "policy": {
+        "allowed_operations": [
+          "collect",
+          "echo",
+          "sum"
+        ],
+        "max_attempts": 3,
+        "max_tasks": 3
+      },
+      "plan": [
+        {
+          "id": "calculate",
+          "deps": [],
+          "op": "sum",
+          "args": {
+            "values": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          "expect": 10
+        }
+      ]
+    },
+    "DEV-08": {
+      "execution_authorized": false,
+      "policy": {
+        "allowed_operations": [
+          "collect",
+          "echo",
+          "sum"
+        ],
+        "max_attempts": 3,
+        "max_tasks": 3
+      },
+      "plan": [
+        {
+          "id": "calculate",
+          "deps": [],
+          "op": "sum",
+          "args": {
+            "values": [
+              999,
+              1
+            ]
+          },
+          "expect": 1000
+        }
+      ]
+    },
+    "DEV-09": {
+      "execution_authorized": false,
+      "policy": {
+        "allowed_operations": [
+          "collect",
+          "echo",
+          "sum"
+        ],
+        "max_attempts": 3,
+        "max_tasks": 3
+      },
+      "plan": [
+        {
+          "id": "echo",
+          "deps": [],
+          "op": "echo",
+          "args": {
+            "value": "alpha"
+          },
+          "expect": "alpha"
+        }
+      ]
+    },
+    "DEV-10": {
+      "execution_authorized": false,
+      "policy": {
+        "allowed_operations": [
+          "collect",
+          "echo",
+          "sum"
+        ],
+        "max_attempts": 3,
+        "max_tasks": 3
+      },
+      "plan": [
+        {
+          "id": "echo",
+          "deps": [],
+          "op": "echo",
+          "args": {
+            "value": {
+              "x": [
+                1,
+                false,
+                null
+              ]
+            }
+          },
+          "expect": {
+            "x": [
+              1,
+              false,
+              null
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "candidate": {
+    "DEV-01": {
+      "execution_authorized": false,
+      "policy": {
+        "allowed_operations": [
+          "collect",
+          "echo",
+          "sum"
+        ],
+        "max_attempts": 3,
+        "max_tasks": 3
+      },
+      "plan": [
+        {
+          "id": "calculate",
+          "deps": [],
+          "op": "sum",
+          "args": {
+            "values": [
+              2,
+              3,
+              5
+            ]
+          },
+          "expect": 10
+        }
+      ]
+    },
+    "DEV-02": {
+      "execution_authorized": false,
+      "policy": {
+        "allowed_operations": [
+          "collect",
+          "echo",
+          "sum"
+        ],
+        "max_attempts": 3,
+        "max_tasks": 3
+      },
+      "plan": [
+        {
+          "id": "calculate",
+          "deps": [],
+          "op": "sum",
+          "args": {
+            "values": [
+              -7,
+              3
+            ]
+          },
+          "expect": -4
+        }
+      ]
+    },
+    "DEV-03": {
+      "execution_authorized": false,
+      "policy": {
+        "allowed_operations": [
+          "collect",
+          "echo",
+          "sum"
+        ],
+        "max_attempts": 3,
+        "max_tasks": 3
+      },
+      "plan": [
+        {
+          "id": "calculate",
+          "deps": [],
+          "op": "sum",
+          "args": {
+            "values": [
+              0,
+              0
+            ]
+          },
+          "expect": 0
+        }
+      ]
+    },
+    "DEV-04": {
+      "execution_authorized": false,
+      "policy": {
+        "allowed_operations": [
+          "collect",
+          "echo",
+          "sum"
+        ],
+        "max_attempts": 3,
+        "max_tasks": 3
+      },
+      "plan": [
+        {
+          "id": "calculate",
+          "deps": [],
+          "op": "sum",
+          "args": {
+            "values": [
+              100,
+              -100
+            ]
+          },
+          "expect": 1
+        }
+      ]
+    },
+    "DEV-05": {
+      "execution_authorized": false,
+      "policy": {
+        "allowed_operations": [
+          "collect",
+          "echo",
+          "sum"
+        ],
+        "max_attempts": 3,
+        "max_tasks": 3
+      },
+      "plan": [
+        {
+          "id": "calculate",
+          "deps": [],
+          "op": "sum",
+          "args": {
+            "values": [
+              9,
+              11
+            ]
+          },
+          "expect": 20
+        }
+      ]
+    },
+    "DEV-06": {
+      "execution_authorized": false,
+      "policy": {
+        "allowed_operations": [
+          "collect",
+          "echo",
+          "sum"
+        ],
+        "max_attempts": 3,
+        "max_tasks": 3
+      },
+      "plan": [
+        {
+          "id": "calculate",
+          "deps": [],
+          "op": "sum",
+          "args": {
+            "values": [
+              -2,
+              -3
+            ]
+          },
+          "expect": -5
+        }
+      ]
+    },
+    "DEV-07": {
+      "execution_authorized": false,
+      "policy": {
+        "allowed_operations": [
+          "collect",
+          "echo",
+          "sum"
+        ],
+        "max_attempts": 3,
+        "max_tasks": 3
+      },
+      "plan": [
+        {
+          "id": "calculate",
+          "deps": [],
+          "op": "sum",
+          "args": {
+            "values": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          "expect": 10
+        }
+      ]
+    },
+    "DEV-08": {
+      "execution_authorized": false,
+      "policy": {
+        "allowed_operations": [
+          "collect",
+          "echo",
+          "sum"
+        ],
+        "max_attempts": 3,
+        "max_tasks": 3
+      },
+      "plan": [
+        {
+          "id": "calculate",
+          "deps": [],
+          "op": "sum",
+          "args": {
+            "values": [
+              999,
+              1
+            ]
+          },
+          "expect": 1000
+        }
+      ]
+    },
+    "DEV-09": {
+      "execution_authorized": false,
+      "policy": {
+        "allowed_operations": [
+          "collect",
+          "echo",
+          "sum"
+        ],
+        "max_attempts": 3,
+        "max_tasks": 3
+      },
+      "plan": [
+        {
+          "id": "echo",
+          "deps": [],
+          "op": "echo",
+          "args": {
+            "value": "alpha"
+          },
+          "expect": "alpha"
+        }
+      ]
+    },
+    "DEV-10": {
+      "execution_authorized": false,
+      "policy": {
+        "allowed_operations": [
+          "collect",
+          "echo",
+          "sum"
+        ],
+        "max_attempts": 3,
+        "max_tasks": 3
+      },
+      "plan": [
+        {
+          "id": "echo",
+          "deps": [],
+          "op": "echo",
+          "args": {
+            "value": {
+              "x": [
+                1,
+                false,
+                null
+              ]
+            }
+          },
+          "expect": {
+            "x": [
+              1,
+              false,
+              null
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

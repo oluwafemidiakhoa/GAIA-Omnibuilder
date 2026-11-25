@@ -1,0 +1,71 @@
+{
+  "suite_sha256": "b6bf132396f0c33c79bf9a0e0ccbbccbb814ff4a6e7467f14b61699815928ec6",
+  "response_sha256": "86445874f4daca2597240848ac601c66707761efc01437d88b7f68f703eae258",
+  "kind": "synthetic_fixture",
+  "cases": 10,
+  "complete_pairs": 10,
+  "baseline_passes": 7,
+  "candidate_passes": 9,
+  "wins": 3,
+  "losses": 1,
+  "ties": 6,
+  "paired_delta": 0.2,
+  "exact_two_sided_sign_p": 0.625,
+  "rows": [
+    {
+      "id": "DEV-01",
+      "baseline": "FAIL",
+      "candidate": "PASS"
+    },
+    {
+      "id": "DEV-02",
+      "baseline": "FAIL",
+      "candidate": "PASS"
+    },
+    {
+      "id": "DEV-03",
+      "baseline": "FAIL",
+      "candidate": "PASS"
+    },
+    {
+      "id": "DEV-04",
+      "baseline": "PASS",
+      "candidate": "FAIL"
+    },
+    {
+      "id": "DEV-05",
+      "baseline": "PASS",
+      "candidate": "PASS"
+    },
+    {
+      "id": "DEV-06",
+      "baseline": "PASS",
+      "candidate": "PASS"
+    },
+    {
+      "id": "DEV-07",
+      "baseline": "PASS",
+      "candidate": "PASS"
+    },
+    {
+      "id": "DEV-08",
+      "baseline": "PASS",
+      "candidate": "PASS"
+    },
+    {
+      "id": "DEV-09",
+      "baseline": "PASS",
+      "candidate": "PASS"
+    },
+    {
+      "id": "DEV-10",
+      "baseline": "PASS",
+      "candidate": "PASS"
+    }
+  ],
+  "status": "SCORED",
+  "provider_identity_verified": false,
+  "matched_budgets_verified": false,
+  "performance_claim_authorized": false,
+  "promotion": "NOT_EVALUATED"
+}

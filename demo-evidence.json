@@ -1,0 +1,281 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "synthetic_demo": true,
+  "runs": [
+    {
+      "command": [
+        "python",
+        "controlled.py",
+        "--db",
+        "demo.db",
+        "init",
+        "demo.json",
+        "--policy",
+        "demo-policy.json"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "initialized": true,
+        "version": "0.3"
+      },
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "controlled.py",
+        "--db",
+        "demo.db",
+        "run",
+        "--max-steps",
+        "1"
+      ],
+      "exit_code": 1,
+      "stdout": {
+        "verdict": "INCOMPLETE",
+        "tasks": {
+          "calculate": {
+            "status": "PASS",
+            "result": 10,
+            "blocker": null
+          },
+          "verify-output": {
+            "status": "PENDING",
+            "result": null,
+            "blocker": "READY"
+          }
+        },
+        "attempts_used": 1,
+        "attempts_remaining": 1,
+        "receipt_head": "5f545f708ebe66e753961db01fcbb3b908347129ec30f7320df8f46392a56143",
+        "steps_this_run": 1,
+        "soft_deadline_reached": false
+      },
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "controlled.py",
+        "--db",
+        "demo.db",
+        "run"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "verdict": "PASS",
+        "tasks": {
+          "calculate": {
+            "status": "PASS",
+            "result": 10,
+            "blocker": null
+          },
+          "verify-output": {
+            "status": "PASS",
+            "result": {
+              "calculate": 10
+            },
+            "blocker": null
+          }
+        },
+        "attempts_used": 2,
+        "attempts_remaining": 0,
+        "receipt_head": "7299842cf03a0a8110eabf5b062fcdbf274ef54c9bd134a94305a04c30464948",
+        "steps_this_run": 1,
+        "soft_deadline_reached": false
+      },
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "controlled.py",
+        "--db",
+        "demo.db",
+        "run"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "verdict": "PASS",
+        "tasks": {
+          "calculate": {
+            "status": "PASS",
+            "result": 10,
+            "blocker": null
+          },
+          "verify-output": {
+            "status": "PASS",
+            "result": {
+              "calculate": 10
+            },
+            "blocker": null
+          }
+        },
+        "attempts_used": 2,
+        "attempts_remaining": 0,
+        "receipt_head": "7299842cf03a0a8110eabf5b062fcdbf274ef54c9bd134a94305a04c30464948",
+        "steps_this_run": 0,
+        "soft_deadline_reached": false
+      },
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "controlled.py",
+        "--db",
+        "demo.db",
+        "verify",
+        "--expected-head",
+        "7299842cf03a0a8110eabf5b062fcdbf274ef54c9bd134a94305a04c30464948"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "valid": true,
+        "head": "7299842cf03a0a8110eabf5b062fcdbf274ef54c9bd134a94305a04c30464948",
+        "attempts": 2,
+        "external_head_checked": true,
+        "execution_authenticated": false
+      },
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "controlled.py",
+        "--db",
+        "demo.db",
+        "receipts"
+      ],
+      "exit_code": 0,
+      "stdout": [
+        {
+          "record": {
+            "event": {
+              "kind": "init",
+              "plan_hash": "9b5084a9fd2eef44949d3870abd72136d1ff879f04da7fdaaa1e99f8aa4a2fd6",
+              "policy_hash": "a99c522c2f637a1c7402cfebf9c7391b168ca450d84c7cb08e7f2f4d7a9af552",
+              "version": "0.3"
+            },
+            "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+            "seq": 1
+          },
+          "hash": "fdc5566545cad0e039b69935dc813face22749f918d8566bff42b35f4e3147b8"
+        },
+        {
+          "record": {
+            "event": {
+              "attempt": 1,
+              "capability": "local.compute.sum",
+              "expect_hash": "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5",
+              "id": "calculate",
+              "input_hash": "95690deb7cc528e7aa717ff2994a18f4e563c2334cbcb8b81ba1c2023cfa83fa",
+              "kind": "execution",
+              "op": "sum",
+              "outcome": "RETURN",
+              "output_hash": "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5",
+              "plan_hash": "9b5084a9fd2eef44949d3870abd72136d1ff879f04da7fdaaa1e99f8aa4a2fd6",
+              "policy_hash": "a99c522c2f637a1c7402cfebf9c7391b168ca450d84c7cb08e7f2f4d7a9af552",
+              "result": 10,
+              "status": "PASS"
+            },
+            "prev": "fdc5566545cad0e039b69935dc813face22749f918d8566bff42b35f4e3147b8",
+            "seq": 2
+          },
+          "hash": "5f545f708ebe66e753961db01fcbb3b908347129ec30f7320df8f46392a56143"
+        },
+        {
+          "record": {
+            "event": {
+              "attempt": 2,
+              "capability": "local.data.collect",
+              "expect_hash": "0da1567cd36e6e8498cf8e39f1c52f15f21cdf4fd1b866e740e9dba0829ac437",
+              "id": "verify-output",
+              "input_hash": "f10f75f51cf6b76904f01b65269385546674e3b59ee0a256262b4adf2b45fd82",
+              "kind": "execution",
+              "op": "collect",
+              "outcome": "RETURN",
+              "output_hash": "0da1567cd36e6e8498cf8e39f1c52f15f21cdf4fd1b866e740e9dba0829ac437",
+              "plan_hash": "9b5084a9fd2eef44949d3870abd72136d1ff879f04da7fdaaa1e99f8aa4a2fd6",
+              "policy_hash": "a99c522c2f637a1c7402cfebf9c7391b168ca450d84c7cb08e7f2f4d7a9af552",
+              "result": {
+                "calculate": 10
+              },
+              "status": "PASS"
+            },
+            "prev": "5f545f708ebe66e753961db01fcbb3b908347129ec30f7320df8f46392a56143",
+            "seq": 3
+          },
+          "hash": "7299842cf03a0a8110eabf5b062fcdbf274ef54c9bd134a94305a04c30464948"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "controlled.py",
+        "--db",
+        "denied.db",
+        "init",
+        "demo.json"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "initialized": true,
+        "version": "0.3"
+      },
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "controlled.py",
+        "--db",
+        "denied.db",
+        "run"
+      ],
+      "exit_code": 1,
+      "stdout": {
+        "verdict": "INCOMPLETE",
+        "tasks": {
+          "calculate": {
+            "status": "PENDING",
+            "result": null,
+            "blocker": "DENIED"
+          },
+          "verify-output": {
+            "status": "PENDING",
+            "result": null,
+            "blocker": "DENIED"
+          }
+        },
+        "attempts_used": 0,
+        "attempts_remaining": 0,
+        "receipt_head": "5744f04aba3cd164b5703c0f8a1660ee6faccd112ed95037c43c56dbdb18661a",
+        "steps_this_run": 0,
+        "soft_deadline_reached": false
+      },
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "controlled.py",
+        "--db",
+        "denied.db",
+        "verify"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "valid": true,
+        "head": "5744f04aba3cd164b5703c0f8a1660ee6faccd112ed95037c43c56dbdb18661a",
+        "attempts": 0,
+        "external_head_checked": false,
+        "execution_authenticated": false
+      },
+      "stderr": ""
+    }
+  ]
+}

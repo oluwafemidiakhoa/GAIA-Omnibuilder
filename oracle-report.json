@@ -1,0 +1,40 @@
+{
+  "verdict": "PASS",
+  "scope": "operator_contract_only",
+  "execution_authorized": false,
+  "execution_observed": false,
+  "natural_language_mission_verified": false,
+  "proposal_sha256": "2f0c196738df1308f7b20198feadbf8ad287d6e803bb82831893718eb375555d",
+  "contract_sha256": "5f7d691932ae4e4359935cc0fcb94b0db96cb3fdf87862b54466a4a429c7eeb4",
+  "policy_sha256": "a99c522c2f637a1c7402cfebf9c7391b168ca450d84c7cb08e7f2f4d7a9af552",
+  "findings": [
+    {
+      "check": "policy_binding",
+      "pass": true
+    },
+    {
+      "check": "within_budget",
+      "pass": true
+    },
+    {
+      "check": "allowlisted_operations",
+      "pass": true
+    },
+    {
+      "check": "exact_task_set",
+      "pass": true
+    },
+    {
+      "check": "calculate:contract_oracle",
+      "pass": true
+    },
+    {
+      "check": "calculate:exact_inputs",
+      "pass": true
+    },
+    {
+      "check": "calculate:oracle_output",
+      "pass": true
+    }
+  ]
+}
