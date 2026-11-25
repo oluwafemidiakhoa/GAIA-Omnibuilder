@@ -41,6 +41,13 @@ class StudioLabTests(unittest.TestCase):
         with urllib.request.urlopen(self.base+'/lab/manifest') as r:
             self.assertEqual(json.load(r)['protocol']['n'],30)
 
+    def test_form_referrer_policy(self):
+        with urllib.request.urlopen(self.base+'/lab') as r:
+            self.assertEqual(r.headers['Referrer-Policy'],'same-origin')
+        with self.assertRaises(urllib.error.HTTPError) as ctx:
+            self.post('/lab/demo',{'token':'token'},'null')
+        self.assertEqual(ctx.exception.code,403)
+
     def test_demo(self):
         with self.post('/lab/demo',{'token':'token','download':'1'}) as r:
             self.assertIn('attachment',r.headers['Content-Disposition']); report=json.load(r)
