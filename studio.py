@@ -57,7 +57,7 @@ def handler(lib,token):
     class Handler(BaseHTTPRequestHandler):
         def log_message(self,*args): pass
         def reply(self,status,data,kind='text/html; charset=utf-8',filename=None):
-            self.send_response(status); self.send_header('Content-Type',kind); self.send_header('Content-Length',str(len(data))); self.send_header('Cache-Control','no-store'); self.send_header('X-Content-Type-Options','nosniff'); self.send_header('Content-Security-Policy',"default-src 'none'; style-src 'unsafe-inline'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'"); self.send_header('Referrer-Policy','no-referrer')
+            self.send_response(status); self.send_header('Content-Type',kind); self.send_header('Content-Length',str(len(data))); self.send_header('Cache-Control','no-store'); self.send_header('X-Content-Type-Options','nosniff'); self.send_header('Content-Security-Policy',"default-src 'none'; style-src 'unsafe-inline'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'"); self.send_header('Referrer-Policy','same-origin')
             if filename: self.send_header('Content-Disposition',f'attachment; filename="{filename}"')
             self.end_headers(); self.wfile.write(data)
         def host_ok(self): return self.headers.get('Host') in {f'127.0.0.1:{self.server.server_port}',f'localhost:{self.server.server_port}'}
